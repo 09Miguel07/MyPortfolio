@@ -1,3 +1,20 @@
 .container {
-  background-color: red;
+  background-color: black;
+  height: 80px;
+  color: white;
+  width: 100%;
+  position: fixed;
+}
+
+.nav {
+  width: 400px;
+  gap: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  right: 0;
+}
+
+.nav span {
+  font-size: medium;
+  background-color: rebeccapurple;
 }
