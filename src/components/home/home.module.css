@@ -1,0 +1,35 @@
+.container {
+  position: absolute;
+  top: 80px;
+  height: calc(100vh - 80px);
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+.title {
+  font-size: xx-large;
+  color: white;
+  width: 280px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: rgb(1, 145, 255);
+  box-shadow: 0 0 5px rgb(1, 145, 255), 0 0 10px rgb(1, 145, 255),
+    0 0 20px rgb(1, 145, 255), 0 0 40px rgb(1, 145, 255);
+}
+
+.description {
+  font-size: larger;
+  max-width: 450px;
+}

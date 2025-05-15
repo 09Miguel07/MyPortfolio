@@ -3,12 +3,12 @@ import styles from "./header.module.css";
 
 export const Header = () => {
   return (
-    <header className={styles["container"]}>
-      <nav className={styles["nav"]}>
-        <span>About Me</span>
-        <span>Projects</span>
+    <nav className={styles["container"]}>
+      <span className={styles["home--link"]}> Home</span>
+      <div className={styles["items--container"]}>
+        <span>My knowledge</span>
         <span>Contact me</span>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 };
