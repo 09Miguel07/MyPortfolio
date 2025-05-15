@@ -1,0 +1,21 @@
+.my--knowledge--container {
+  height: calc(50vh - 80px);
+  background-color: rgb(6, 6, 63);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  gap: 50px;
+}
+
+.logos-container {
+  width: 800px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  max-width: 130px;
+  max-height: 130px;
+}
