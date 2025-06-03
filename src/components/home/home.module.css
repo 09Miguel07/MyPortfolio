@@ -6,6 +6,10 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 150px;
+  animation: blur linear both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 30%;
+  animation: moveToRight 2s ease-out;
 }
 
 .picture {
@@ -53,4 +57,24 @@
   cursor: pointer;
   background-color: rgb(133, 133, 133);
   color: black;
+}
+
+@keyframes blur {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveToRight {
+  from {
+    transform: translate(-500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

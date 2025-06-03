@@ -9,12 +9,14 @@ export const Footer = () => {
     <footer className={styles["contact--me--container"]} id="contactMe">
       <h2>Contact me: </h2>
 
-      {data.map((item, index) => (
-        <a href={item.url} key={index} className={styles["link"]}>
-          <i className={`${item.icon} ${styles["icon"]}`}></i>
-          <h3>{item.text}</h3>
-        </a>
-      ))}
+      <div className={styles["links--container"]}>
+        {data.map((item, index) => (
+          <a href={item.url} key={index} className={styles["link"]}>
+            <i className={`${item.icon} ${styles["icon"]}`}></i>
+            <h3>{item.text}</h3>
+          </a>
+        ))}
+      </div>
     </footer>
   );
 };

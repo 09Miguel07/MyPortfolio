@@ -1,21 +1,68 @@
-.my--knowledge--container {
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
+.about__container {
+  max-height: max-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 100px;
+  animation: blur linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
+}
+
+.description {
+  margin-left: 150px;
+  font-family: "Aladin", system-ui;
+  color: white;
+  font-size: x-large;
+}
+
+.my--skills--container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.my--skills--container::before {
+  content: "";
+  width: 4px;
+  height: 90%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  box-shadow: 0 0 5px rgb(1, 145, 255), 0 0 10px rgb(1, 145, 255),
+    0 0 20px rgb(1, 145, 255), 0 0 40px rgb(1, 145, 255);
 }
 
 .logos-container {
-  width: 800px;
-  display: flex;
-  justify-content: space-around;
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
   margin-bottom: 60px;
 }
 
 .logo {
-  max-width: 130px;
-  max-height: 130px;
+  max-width: 100px;
+  max-height: 100px;
   border-radius: 32px;
+  align-self: center;
+  transition: 1.3s;
+}
+
+.logo:hover {
+  scale: 1.2;
+  border-radius: 0;
+}
+
+@keyframes blur {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

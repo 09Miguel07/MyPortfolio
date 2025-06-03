@@ -2,6 +2,15 @@
   height: 35vh;
   padding-left: 100px;
   padding-top: 50px;
+  animation: blur linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
+}
+
+.links--container {
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .link {
@@ -19,4 +28,13 @@
   color: rgb(255, 162, 0);
   scale: 1.1;
   text-decoration: underline rgb(255, 162, 0);
+}
+
+@keyframes blur {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

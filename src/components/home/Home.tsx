@@ -3,7 +3,7 @@ import styles from "./home.module.css";
 
 export const Home = () => {
   return (
-    <article className={styles["home--container"]} id="home">
+    <section className={styles["home--container"]} id="home">
       <h1 className={styles["name"]}>
         MIGUEL <br />
         <span className={styles["last__name"]}>MORENO</span>
@@ -16,6 +16,6 @@ export const Home = () => {
           <i className="bi bi-download"></i> <span>Download CV </span>
         </button>
       </a>
-    </article>
+    </section>
   );
 };

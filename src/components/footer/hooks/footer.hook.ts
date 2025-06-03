@@ -20,6 +20,11 @@ export const useFooter = (): useFooterInterface => {
       text: "Correo Electronico",
       url: "mailto:morenoarenasmiguel@gmail.com",
     },
+    {
+      icon: "bi bi-github",
+      text: "Github",
+      url: "https://github.com/09Miguel07",
+    },
   ];
 
   return { data };
