@@ -3,12 +3,19 @@ import styles from "./home.module.css";
 
 export const Home = () => {
   return (
-    <article className={styles["home--container"]}>
-      <h1 className={styles["title"]}>I'm Miguel Moreno</h1>
-      <p className={styles["description"]}>
-        I'm a junior frontend developer, I'm passionate about create and
-        participate in the development of applications and web pages.{" "}
-      </p>
+    <article className={styles["home--container"]} id="home">
+      <h1 className={styles["name"]}>
+        MIGUEL <br />
+        <span className={styles["last__name"]}>MORENO</span>
+      </h1>
+
+      <h3>I'm a frontend Developer</h3>
+
+      <a href="/Documents/HOJA DE VIDA.docx" download>
+        <button className={styles["button"]}>
+          <i className="bi bi-download"></i> <span>Download CV </span>
+        </button>
+      </a>
     </article>
   );
 };

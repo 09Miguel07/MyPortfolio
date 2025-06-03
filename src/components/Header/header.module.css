@@ -1,33 +1,28 @@
 .container {
-  background-color: rgb(1, 145, 255);
+  background-color: rgb(0, 162, 255);
   height: 80px;
-  width: 100%;
+  padding: 0 50px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-nav {
+  justify-content: center;
+  left: 50%;
   font-size: larger;
-}
-
-.home--link {
-  padding-left: 50px;
-}
-
-.items--container {
-  width: 400px;
+  transform: translate(-50%);
   gap: 30px;
-  display: flex;
-  justify-content: space-evenly;
+  box-shadow: 0 0 50px rgb(10, 101, 153), 0 0 30px rgb(10, 101, 153);
+  z-index: 1;
 }
 
-span {
-  transition: 0.5s;
+.item {
+  transition: 1s;
+  cursor: pointer;
 }
 
-span:hover {
-  color: rgb(255, 162, 0);
-  text-decoration: underline rgb(255, 162, 0);
+.item:hover {
+  color: black;
+  scale: 1.1;
+  text-decoration: underline black;
 }

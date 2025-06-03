@@ -1,12 +1,11 @@
 .home--container {
-  position: relative;
   top: 80px;
   height: 100vh;
   width: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 100px;
+  padding-left: 150px;
 }
 
 .picture {
@@ -14,14 +13,21 @@
   max-width: 200px;
 }
 
-.title {
-  font-size: xx-large;
+.name {
+  font-size: 50px;
+  max-width: max-content;
   color: white;
-  width: 280px;
+  font-weight: 300;
   position: relative;
+  font-family: "Aladin", system-ui;
+}
+.last__name {
+  font-family: "Berkshire Swash", serif;
+  font-size: 70px;
+  font-weight: 500;
 }
 
-.title::after {
+.name::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -33,7 +39,18 @@
     0 0 20px rgb(1, 145, 255), 0 0 40px rgb(1, 145, 255);
 }
 
-.description {
-  font-size: larger;
-  max-width: 450px;
+.button {
+  width: 200px;
+  height: 40px;
+  border-radius: 16px;
+  background-color: rgb(1, 145, 255);
+  transition: 1.3s;
+  color: white;
+}
+
+.button:hover {
+  scale: 1.1;
+  cursor: pointer;
+  background-color: rgb(133, 133, 133);
+  color: black;
 }

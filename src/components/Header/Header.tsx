@@ -1,14 +1,28 @@
 //styles
 import styles from "./header.module.css";
+import { useHeader } from "./hooks/header.hook";
 
 export const Header = () => {
+  const { scrollTo } = useHeader();
+
   return (
     <nav className={styles["container"]}>
-      <span className={styles["home--link"]}> Home</span>
-      <div className={styles["items--container"]}>
-        <span>My knowledge</span>
-        <span>Contact me</span>
-      </div>
+      <span className={styles["item"]} onClick={() => scrollTo({ id: "home" })}>
+        {" "}
+        Home
+      </span>
+      <span
+        className={styles["item"]}
+        onClick={() => scrollTo({ id: "about" })}
+      >
+        About
+      </span>
+      <span
+        className={styles["item"]}
+        onClick={() => scrollTo({ id: "contactMe" })}
+      >
+        Contact me
+      </span>
     </nav>
   );
 };
