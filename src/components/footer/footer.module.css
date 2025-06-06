@@ -30,6 +30,20 @@
   text-decoration: underline rgb(255, 162, 0);
 }
 
+@media (max-width: 1024px) {
+  .contact--me--container {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .links--container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+}
+
 @keyframes blur {
   from {
     opacity: 0;

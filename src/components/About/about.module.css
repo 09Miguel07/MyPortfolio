@@ -58,6 +58,34 @@
   border-radius: 0;
 }
 
+@media (max-width: 1024px) {
+  .about__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description {
+    margin: 40px;
+  }
+
+  .my--skills--container::before {
+    width: 100%;
+    height: 4px;
+    top: 0;
+  }
+}
+@media (max-width: 550px) {
+  .logos-container {
+    width: 350px;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+  }
+}
+
 @keyframes blur {
   from {
     opacity: 0;

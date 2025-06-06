@@ -59,6 +59,18 @@
   color: black;
 }
 
+@media (max-width: 1024px) {
+  .home--container {
+    padding-left: 50px;
+  }
+  .name {
+    font-size: 40px;
+  }
+  .last__name {
+    font-size: 50px;
+  }
+}
+
 @keyframes blur {
   from {
     opacity: 0;
